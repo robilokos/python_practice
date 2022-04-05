@@ -52,10 +52,11 @@ human={
     "footsize":41
 }
 print(human)
-
+#breakpoint()
+"""
 numbers={4,67,82,36,67,55,12,4}
 print(numbers)
 tools2=["cp","cp","FMEA","EK","SNAPP","PDCAFTA"]
 print(set(tools2))
-
+"""
 print("done")
