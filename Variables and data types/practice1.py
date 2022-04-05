@@ -31,3 +31,6 @@ print("Több változó létrehozása egyszerre.\n")
 
 print("Több egyforma értékű változó létrehozása egyszerre.\n")
 
+
+
+print("")
