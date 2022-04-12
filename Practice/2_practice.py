@@ -56,6 +56,12 @@ def fizz_buzz():
                     print(i)
 
 
+def create_dict():
+    keys = ['a', 'b', 'c', 'd']
+
+def print_dict(my_dict):
+    pass
+
 
 if __name__ == '__main__':
     numbers_one_to_ten()
