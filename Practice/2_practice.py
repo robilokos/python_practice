@@ -89,3 +89,14 @@ if __name__ == '__main__':
     my_dict = create_dict()
     print_dict(my_dict)
 
+    matrix = [
+        [1,2,3],
+        [4,5,6]
+    ]
+    for sor in matrix:
+        print(sor)
+
+
+    f = open("asd.txt", "w")
+    f.write("fasz")
+    f.close()
