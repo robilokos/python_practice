@@ -5,25 +5,72 @@
 # írj egy függvényt, ami kiírja a paraméternek megadott szám abszolút értékét
 # írj egy függvényt, ami elszámol 100-ig úgy, hogy minden 3-mal osztható szám helyett az írja ki hogy Fizz
     # minden 5-tel osztható számra azt írja ki hogy Buzz, és ami mindkettővel osztható, arra azt hogy FizzBuzz 
-
+import math
 
 def numbers_one_to_ten():
-    pass
+    for i in range(1,11):
+        print(i)
+
 
 def list_one_to_ten():
-    pass
+    my_list=[]
+    for i in range(1,11):
+        my_list.append(i)
+    return my_list
 
 def factorial(n):
-    pass
+    tmp=1
+    for i in range(1,n+1):
+        tmp = tmp*i
+    return tmp
+    
 
 def quadratic(a, b, c):
-    pass
+    d = b*b-4*a*c
+    if d < 0:
+        print("fasz")
+    else:
+        if d == 0:
+            print(-b/2*a)
+        else:
+            print((-b+math.sqrt(d))/(2*a))
+            print((-b-math.sqrt(d))/(2*a))
 
 def abs(n):
-    pass
+    if n > 0:
+        return n
+    else:
+        return n * (-1)
 
 def fizz_buzz():
-    pass
+    for i in range(1,101):
+        if i % 3 == 0 and i % 5 == 0:
+            print("Fizz Buzz")
+        else:
+            if i % 3 == 0:
+                print("Fizz")
+            else:
+                if i % 5 ==0:
+                    print("Buzz")
+                else:
+                    print(i)
+
+
 
 if __name__ == '__main__':
-    pass
+    numbers_one_to_ten()
+    q = list_one_to_ten()
+    print(q)
+
+    f = factorial(5)
+    print(f)
+
+    print(factorial(5))
+
+    print(abs(-4))
+    print(abs(6))
+    print(abs(0))
+    print()
+    fizz_buzz()
+    print()
+    quadratic(2, 16, 9)
