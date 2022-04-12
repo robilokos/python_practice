@@ -58,9 +58,14 @@ def fizz_buzz():
 
 def create_dict():
     keys = ['a', 'b', 'c', 'd']
+    my_dict = {}
+    for i in range(len(keys)):
+        my_dict[keys[i]] = i + 1
+    return my_dict
 
 def print_dict(my_dict):
-    pass
+    for key, value in my_dict.items():
+        print(key, value)
 
 
 if __name__ == '__main__':
@@ -80,3 +85,7 @@ if __name__ == '__main__':
     fizz_buzz()
     print()
     quadratic(2, 16, 9)
+
+    my_dict = create_dict()
+    print_dict(my_dict)
+
